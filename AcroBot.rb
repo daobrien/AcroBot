@@ -85,11 +85,11 @@ bot = Cinch::Bot.new do
 
   configure do |c|
    c.nick = settings['nick']         # "acrobot"
-   c.realname = settings['realname'] # "IRC Acronym and Abbreviation Expander Bot. !help for help"
+   c.realname = settings['realname'] # "IRC Acronym and Abbreviation Expander Bot. '!acrohelp' for help"
    c.user = settings['user']         # "acrobot" #user name when connecting
    c.server = settings['server']     #"irc.freenode.net"
-   c.channels = settings['channels'] # ["#acrobot","#katello","#openshift","#satellite6","#zanata","#theforeman"]
-#   c.channels = ["#acrobot"]
+#   c.channels = settings['channels'] # ["#acrobot","#katello","#openshift","#satellite6","#zanata","#theforeman"]
+   c.channels = ["#acrobot"]
    c.prefix = settings['prefix']     # /^!/
   end
 
@@ -100,7 +100,7 @@ bot = Cinch::Bot.new do
     m.reply("#{nick} Thanks! [#{abbrev}=#{desc}]")
   end
 
-  on :message, /^!help/i do |m|
+  on :message, /^!acrohelp/i do |m|
     nick = m.channel? ? m.user.nick+": " : ""
     m.reply("To expand an acronym, type (e.g.), !ftp")
     m.reply("To add a new acronym, type (e.g.), !FTP=File Transfer Protocol")
@@ -122,7 +122,7 @@ bot = Cinch::Bot.new do
 
   on :message, /^!([\w\-\_]+)$/ do |m, abbrev|
     abbrev = abbrev.strip
-    unless abbrev =~ /^help$/i
+    unless abbrev =~ /^acrohelp$/i
       nick_str = m.channel? ? "#{m.user.nick}:" : ""
       if replies = lookup_dictionary(abbrev)
         replies.each do |original_abbrev, value|
