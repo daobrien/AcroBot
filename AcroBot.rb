@@ -84,9 +84,9 @@ bot = Cinch::Bot.new do
   settings = load_settings
 
   configure do |c|
-   c.nick = settings['nick']         # "Dacronym"
+   c.nick = settings['nick']         # "acrobot"
    c.realname = settings['realname'] # "IRC Acronym and Abbreviation Expander Bot. !help for help"
-   c.user = settings['user']         # "Dacronym" #user name when connecting
+   c.user = settings['user']         # "acrobot" #user name when connecting
    c.server = settings['server']     #"irc.freenode.net"
    c.channels = settings['channels'] # ["#Dacronym","#katello","#openshift","#satellite6","#zanata","#theforeman"]
 #   c.channels = ["#Dacronym"]
