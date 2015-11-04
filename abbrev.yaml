@@ -425,8 +425,8 @@ kernel:
 cloud:
   CFSE: CloudForms System Engine @cloud
   CDS: Content Distribution Server @cloud
-  IaaS: Infrastructure-as-a-Service @cloud http://file.bne.redhat.com/~daobrien/StyleGuide/index.html#paas
-  PaaS: Platform-as-a-Service @cloud http://file.bne.redhat.com/~daobrien/StyleGuide/index.html#paas
+  IaaS: Infrastructure-as-a-Service @cloud http://stylepedia.net
+  PaaS: Platform-as-a-Service @cloud http://stylepedia.net
   RBA: Role-based Administration @cloud
   LBaaS: Load-Balancer-as-a-Service @cloud @rhos
   DBaaS: Database-as-a-Service @cloud http://www.scaledb.com/DBaaS-Database-as-a-Service.php
