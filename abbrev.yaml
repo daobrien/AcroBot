@@ -567,7 +567,7 @@ consulting:
   SASL: Simple Authentication and Security Layer
   SCA: Service Component Architecture
   SCDL: Service Component Definition Language
-  SCM: Software Configuration Management
+  SCM: source code management
   SEDA: Staged Event-Driven Architecture
   SIT: System Integration Testing
   SMB: Small or Medium Business
@@ -647,7 +647,6 @@ consulting:
   SCE: Strategic Customer Engagement
   CSV: comma-separated values
   CCW: channel command word bus @System z
-  S-RAMP: SOA Repository Artifact Model and Protocol
   RTGov: Run Time Governance
   EIS: Enterprise Information Services
   APR: annual percentage rate
@@ -670,7 +669,7 @@ consulting:
   CORS: Cross-origin resource sharing
   XHR: XMLHttpRequest
   DIMM: dual in-line memory module
-  IdM: Identity Management @auth
+  IdM: Identity Management @auth @RH
   VCS: Version Control System
   EDS: Easy Digital Signage
   AJP: Apache JServ Protocol
@@ -857,7 +856,6 @@ consulting:
   TRAC: Technical Reference Architecture Change
   VMW: VM Ware
   WBT: Web-based training
-  SCM: source code management
   RIA: Rich Internet Application
   LHS: left-hand side
   RHS: right-hand side
@@ -903,7 +901,7 @@ consulting:
   SMTP: Simple Mail Transfer Protocol
   HOTP: HMAC-Based One-Time Password @auth
   TOTP: Time-Based One-Time Password @auth
-  IPMI: Intelligent Platform Management Interface
+  IPMI: Intelligent Platform Management Interface @kernel
   OCF: Open Clustering Framework
   MDD: Metrics-driven development
   EDAC: Error Detection and Correction
@@ -919,7 +917,6 @@ consulting:
   JIS: Japanese Industrial Standards
   RDP: Remote Desktop Protocol
   GIO: GNOME I/O
-  IPMI: Intelligent Platform Management Interface @kernel
   JIT: Just In Time
   ARM: Advanced RISC Machines @hardware
   JLS: Java Language Specification @java
@@ -928,11 +925,10 @@ consulting:
   PHY: physical layer of the OSI model
   UTP: Unshielded Twisted Pair @networking
   TLD: Top-level Domain
-  SPICE: Simple Protocol for Independent Computing Environments 
+  SPICE: Simple Protocol for Independent Computing Environments
   RISC: Reduced instruction set computing @cpu
   CISC: Complex instruction set computing @cpu
   FBA: Fixed Block Architecture @hardware http://en.wikipedia.org/wiki/Fixed-block_architecture
-  IdM: Identity Management @auth @RH
 redhat:
   RHCCE: Red Hat Customer Convergence Event @RH
   RHSM: Red Hat Subscription Management @RH
@@ -1051,7 +1047,7 @@ redhat:
     in FY15 @RH
   GWS: Global Workplace Solutions @RH
   JBDS: JBoss Developer Studio @RH
-  JBoss: (Enterprise) JavaBeans Open Source Software @RH
+  JBoss: "(Enterprise) JavaBeans Open Source Software @RH"
   jBPM: Java Business Process Management @RH
   JDF: JBoss Developer Framework @RH
   JDG: JBoss Data Grid @RH
@@ -1229,7 +1225,7 @@ freshest:
   vsftpd: Very Secure FTP Daemon
   CDL: Commmon Disk Layout
   LDL: Linux Disk Layout
-  CBC: Cipher Block Chaining @security 
+  CBC: Cipher Block Chaining @security
   DISA: Defense Information Systems Agency @security
   RSS: Resident Set Size @hardware
   RO: Read Only
@@ -1239,10 +1235,10 @@ freshest:
   PEAP: Partner Early Access Program @RH
   CSS: Cascading Style Sheets
   DSE: DSA Service Entry
-  DSA: Directory Server Agent
+  DSA: Digital Signature Algorithm @crypt @do_not_expand
   MLD: Multicast Listener Discovery @networking
   LMS: Learning Management System @RH
-  RFP: Request For Proposal @RH
+  RFP: Request for Proposal
   SRPM: Source RPM
   UDPU: UDP Unicast @networking
   RHAI: Red Hat Access Insights @Satellite
@@ -1275,14 +1271,14 @@ freshest:
   IPoIB: IP over InfiniBand @networking
   CKL: Compromised Key List @security
   JPDA: Java Platform Debugger Architecture @java
-  JDI: Java Debug Interface @java 
+  JDI: Java Debug Interface @java
   JVMDI: Java Virtual Machine Debug Interface @java
   TripleO: OpenStack on OpenStack @cloud
   JVMPI: Java Virtual Machine Profiler Interface @java
   PAV: Parallel Access Volumes
   FTBFS: Fails To Build From Source
   CPAN: Comprehensive Perl Archive Network
-  LZW: Lempel–Ziv–Welch 
+  LZW: Lempel–Ziv–Welch
   LZMA: Lempel–Ziv–Markov chain algorithm
   OOO: Out Of Office
   PTO: Paid Time Off
@@ -1315,9 +1311,8 @@ freshest:
   SA: Serviceability Agent @java
   HPROF: Heap/CPU Profiling Tool @java
   MaaS: Metal as a Service
-  OSD: Object Storage Device @ceph
+  OSD: On-screen Display @gnome
   ISBU: Integrated Solutions Business Unit @RH
-  RFP: Request for Proposal
   RFI: Request for Information
   OSS: Operations Support Systems
   BSS: Business Support Systems
@@ -1347,7 +1342,7 @@ freshest:
   CDS: Content Delivery Server @RH
   RADOS: Reliable Autonomic Distributed Object Store @ceph
   RBD: RADOS Block Device @ceph
-  ELF: Executable and Linkable Format 
+  ELF: Executable and Linkable Format
   YUM: Yellowdog Updater, Modified @do_not_expand
   DNF: Dandified Yum @do_not_expand
   RTC: Real-time Clock
@@ -1366,7 +1361,7 @@ freshest:
   PG: Placement Group @ceph
   IM: Input Method
   HTTP: Hypertext Transfer Protocol @do_not_expand
-  iSCSI: Internet Small Computer System Interface @networking @do_not_expand 
+  iSCSI: Internet Small Computer System Interface @networking @do_not_expand
   GOA: Gnome Online Accounts
   LF: Line Feed
   CR: Carriage Return
@@ -1376,7 +1371,6 @@ freshest:
   GUID: Globally Unique Identifier @do_not_expand
   ADSL: Asymmetric Digital Subscriber Line @do_not_expand
   RSA: Rivest-Shamir-Adleman @crypt @do_not_expand
-  DSA: Digital Signature Algorithm @crypt @do_not_expand
   ECDSA: Elliptic Curve Digital Signature Algorithm @crypt @do_not_expand
   RADIUS: Remote Authentication Dial-In User Service @do_not_expand @networking
   NIP: Next Instruction Pointer @kernel
@@ -1397,10 +1391,9 @@ freshest:
   NVT: Network Virtual Terminal
   CSP: Communications Service Provider
   NFV: Network Function Virtualization @networking
-  OSD: On-screen Display @gnome
   ISDN: Integrated Services Digital Network @networking
   RUV: Replica Update Vector
-  RTSP: Real Time Streaming Protocol 
+  RTSP: Real Time Streaming Protocol
   MIKEY: Multimedia Internet Keying
   RTP: Real-time Transport Protocol @networking
   CPG: Closed Process Groups @cluster
@@ -1409,7 +1402,7 @@ freshest:
   PSM: Performance Scaled Messaging @openmpi
   MCA: Modular Component Architecture @openmpi
   MTL: Matching Transport Layer @openmpi
-  RHCS: Red Hat Ceph Storage @ceph @always_expand 
+  RHCS: Red Hat Ceph Storage @ceph @always_expand
   IDP: Individual Development Plan @RH
 new:
   x86_64: AMD64 and Intel 64 systems @unchecked
@@ -1417,6 +1410,7 @@ new:
   s390x: IBM System z @unchecked
   i686: Intel P6 @unchecked
   IDL: ID List @389 Directory Server @unchecked
+  DoD: Department of Defense
 slang:
   MTG: Meeting @do_not_use
   AFAIK: As Far As I Know @do_not_use
@@ -1463,3 +1457,45 @@ slang:
   g11n: globalization, the combination of i18n and l10n @do_not_use
   TPTB: the powers that be @do_not_use
   PEBCAK: Problem Exists Between Chair And Keyboard @do_not_use
+tags:
+  do_not_use: do not use the acronym in product docs @tags
+  always_cap: always capitalize @tags                                                                
+  unchecked: acronym is in the moderation queue @tags                                                
+  RH: internal acronym specific to Red Hat @tags                                                     
+  auth: related to authentication @tags                                                              
+  cloud: related to cloud @tags                                                                      
+  crypt: related to cryptography @tags
+  docs: related to documentation @tags
+  errata: related to errata @tags
+  fips: related to FIPS mode @tags
+  gss: related to Global Support Services @tags
+  hss: related to Hosted&Shared Services (RH) @hss
+  java: related to Java @tags
+  jboss: related to JBoss @tags
+  kernel: related to Linux kernel @tags
+  libreoffice: related to Libre Office suite @tags
+  mmgmt: related to memory management @tags
+  mrg: related to RH Enterprise MRG @tags
+  networking: related to networking @tags
+  openshift: related to OpenShift @tags
+  oracle: related to the Oracle business suite @tags
+  pcie: related to PCI Express @tags
+  pciutils: related to PCI Utils @tags
+  sfdc: related to Salesforce @tags
+  selinux: related to Security-Enhanced Linux @tags
+  standards: related to various industry standards @tags
+  virt: related to virtualization @tags
+  wifi: related to Wi-Fi @tags
+  win: related to Microsoft Windows @tags
+  xen: related to Xen virtualization platform @tags
+  maven: related to Apache Maven @tags
+  Satellite: related to Red Hat Satellite @tags
+  ruby: related to Ruby programming language @tags
+  arm: related to ARM instruction set architecture @tags
+  containers: related to Linux containers, Docker, Atomic @tags
+  ceph: related to the ceph storage platform @tags
+  gnome: related to the gnome desktop environment @tags
+  openmpi: related to the openmpi project @tags
+  security:
+  cpu:
+  hardware:
