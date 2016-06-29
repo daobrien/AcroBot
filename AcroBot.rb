@@ -85,8 +85,8 @@ bot = Cinch::Bot.new do
   configure do |c|
    c.nick = settings['nick']         # "acrobot"
    c.realname = settings['realname'] # "IRC Acronym and Abbreviation Expander Bot. '!help' for help"
-   c.user = settings['user']         # "acrobot" #user name when connecting
-   c.server = settings['server']     #"irc.freenode.net"
+   c.user = settings['user']         # "acrobot" (user name when connecting)
+   c.server = settings['server']     # "irc.freenode.net"
    c.channels = settings['channels'] # ["#acrobot","#katello","#openshift","#satellite6","#zanata","#theforeman"]
 #   c.channels = ["#acrobot"]
    c.prefix = settings['prefix']     # /^!/
@@ -113,7 +113,7 @@ bot = Cinch::Bot.new do
     match_abbrevs = find_values(tag)
     nick = m.channel? ? m.user.nick+": " : ""
     if match_abbrevs.empty?
-      m.reply("#{nick}Sorry, no such tag. To list all tags, type !@tags")
+      m.reply("#{nick} Sorry, no such tag. To list all tags, type !@tags")
     else
         m.reply("#{nick}#{match_abbrevs.join(', ')}")
     end
@@ -126,7 +126,7 @@ bot = Cinch::Bot.new do
       if replies = lookup_dictionary(abbrev)
         replies.each do |original_abbrev, value|
           value, *tags = value.split('@')
-          reply_str = "%s %s stands for %s %s" % [
+          reply_str = "%s %s: %s %s" % [
             nick_str,
             Cinch::Formatting.format(:bold, original_abbrev.to_s),
             Cinch::Formatting.format(:bold, value.strip),
